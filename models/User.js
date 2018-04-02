@@ -7,7 +7,7 @@ var userSchema = mongoose.Schema({
     phone: String,
     address: String,
     images: [{
-        imgage_name:String,
+        image_name:String,
         image_url: String,
         image_type: String,
         created_date: Date,
