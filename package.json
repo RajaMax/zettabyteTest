@@ -1,0 +1,27 @@
+{
+  "name": "ZettaByte-Test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Raja Abinesh",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.1.5",
+    "body-parser": "^1.17.0",
+    "compression": "^1.6.2",
+    "express": "^4.15.0",
+    "mongodb": "^2.2.24",
+    "mongoose": "^4.8.6",
+    "os-service": "^1.4.1"
+  },
+  "devDependencies": {
+    "morgan": "^1.8.1"
+  }
+}
