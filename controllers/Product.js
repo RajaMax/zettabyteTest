@@ -39,8 +39,17 @@ var proudtController = {
       response.meta.message = 'error in Produt';
       res.status(500).json(response);
     };
-
-    productService.deleteProduct(req.params.id, successCallback, errorCallback);
+    if(req.params.id){
+      productService.deleteProduct(req.params.id, successCallback, errorCallback);
+    }else{
+      var response = {};
+      response.meta = {};
+      response.meta.message = 'no record in server';
+      res.status(200).json(response);
+    }
+  },
+  checkstatus:function(req, res) {
+    res.status(200).json({result:true});
   }
 };
 module.exports = proudtController;

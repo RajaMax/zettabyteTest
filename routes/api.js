@@ -18,7 +18,8 @@ router.put("/user/uploadimage/:id",user.uploadImage)
 router.get('/product/', product.getProducts);
 router.post('/product/', product.createProduct);
 router.delete('/product/:id', product.deleteProduct);
-
 //------------------Routes for User Resource-----------------/
+
+router.get('/checkstatus', product.checkstatus);
 
 module.exports = router;

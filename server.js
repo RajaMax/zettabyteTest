@@ -38,8 +38,9 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use('', api);
 app.use(express.static('public/dist'))
 
+// mongoose.connect("mongodb://raja:raja@ds129946.mlab.com:29946/zeetabyte");
+mongoose.connect("mongodb://localhost:27017/electron");
 
-mongoose.connect("mongodb://raja:raja@ds129946.mlab.com:29946/zeetabyte");
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function () {
