@@ -39,7 +39,9 @@ app.use('', api);
 app.use(express.static('public/dist'))
 
 // mongoose.connect("mongodb://raja:raja@ds129946.mlab.com:29946/zeetabyte");
-mongoose.connect("mongodb://localhost:27017/electron");
+//mongoose.connect("mongodb://localhost:27017/electron");
+mongoose.connect("mongodb://raja:raja100@ds133875.mlab.com:33875/chat21");
+
 
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
